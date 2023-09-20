@@ -147,7 +147,7 @@ class AnimalGUI extends JFrame {
     private Zoo zoo;
 
     public AnimalGUI() {
-        setTitle("Animal Behaviors");
+        setTitle("Zoo Management");
         setSize(400, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
