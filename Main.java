@@ -42,7 +42,6 @@ class Mammal extends Animal {
         return getName() + " is running.";
     }
 }
-
 class Bird extends Animal implements Flyable {
     public Bird(String name, int age) {
         super(name, age);
@@ -168,7 +167,7 @@ class AnimalGUI extends JFrame {
         ageField = new JTextField();
 
         JLabel typeLabel = new JLabel("Type:");
-        String[] animalTypes = {"Mammal", "Bird", "Reptile", "Fish", "Amphibian", "Insect"};
+        String[] animalTypes = {"mammal", "bird", "reptile", "fish", "amphibian", "insect"};
         typeComboBox = new JComboBox<>(animalTypes);
 
         JButton addButton = new JButton("Add Animal");
@@ -231,9 +230,9 @@ class AnimalGUI extends JFrame {
             case "amphibian":
                 animal = new Amphibian(name, age);
                 break;
-            case "insect":
-                animal = new Insect(name, age);
-                break;
+            // case "insect":
+            //     animal = new Insect(name, age);
+            //     break;
             default:
                 JOptionPane.showMessageDialog(this, "Invalid animal type.", "Invalid Type", JOptionPane.ERROR_MESSAGE);
                 return;
