@@ -167,7 +167,7 @@ class AnimalGUI extends JFrame {
         ageField = new JTextField();
 
         JLabel typeLabel = new JLabel("Type:");
-        String[] animalTypes = {"mammal", "bird", "reptile", "fish", "amphibian", "insect"};
+        String[] animalTypes = {"mammal", "Bird", "Reptile", "fish", "amphibian", "insect"};
         typeComboBox = new JComboBox<>(animalTypes);
 
         JButton addButton = new JButton("Add Animal");
